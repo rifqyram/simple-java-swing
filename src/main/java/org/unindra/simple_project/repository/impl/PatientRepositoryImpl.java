@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PatientRepositoryImpl extends CRUDRepositoryImpl<Patient, String> implements PatientRepository {
+public class PatientRepositoryImpl extends CRUDRepositoryImpl<Patient, String> implements PatientRepository<Patient, String> {
     public PatientRepositoryImpl() {
         super(Patient.class);
     }

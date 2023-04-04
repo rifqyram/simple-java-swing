@@ -4,7 +4,7 @@ import org.unindra.simple_project.entity.Patient;
 
 import java.util.List;
 
-public interface PatientRepository {
+public interface PatientRepository<T, ID> extends CRUDRepository<T, ID> {
 
     List<Patient> findByName(String name);
 
